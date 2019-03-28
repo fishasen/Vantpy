@@ -1,4 +1,18 @@
-## <center> **Vantpy1.0**</center>
+﻿## <center> **Vantpy2.0**</center>
+
+#### 关于更新1.21
+Vantpy更新的内容：
+1. 兼容Linux系统，mac系统，跨系统使用，多人协作
+2. 删除绝对路径的读取，改为相对路径的读取
+3. 加入接口测试模块
+4. 集成Jenkins，测试报告采用Allure测试报告
+5. 添加随机生成器，使测试用例更灵活
+6. 对selenium二次开发添加新的操作
+7. 实现有界面与无界面之间的切换
+
+<center> **![](screenshots/vantpy2.0.jpg)** </center>
+--------------------------------------- 
+
 
 ---
 #### 关于框架：
@@ -17,9 +31,7 @@ Vantpy框架基于Selenium+Yaml+Unittest搭建的WebUI自动化测试框架
 
 #### 使用到的package：
 
-> pip install selenium
-
-> pip install pyyaml
+> pip install requirements.txt
 
 #### 支持的浏览器及驱动：
 基于Selenium支持的所有浏览器
@@ -63,13 +75,6 @@ brwserType:
 
 testUrl:
   URL : https://www.baidu.com
-```
-
-```
-file_path = os.path.dirname(os.getcwd())
-        name_path = file_path + '\conf\config.yaml'
-        with open(name_path, 'r') as f:
-            temp = yaml.load(f.read())
 ```
 
 #### 日志输出
